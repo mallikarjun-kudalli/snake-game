@@ -1,0 +1,101 @@
+symptoms,disease
+"fever cough sore throat runny nose body ache",Flu
+"high fever chills sweating headache body pain",Flu
+"cough fatigue fever nasal congestion",Flu
+"muscle pain dry cough fever weakness",Flu
+"fever body ache fatigue chills",Flu
+"cough throat pain mild fever body pain",Flu
+"sudden fever headache muscle pain cough",Flu
+"fever weakness dry throat cough",Flu
+"chills fever cough tiredness",Flu
+"body ache fever sore throat cough",Flu
+"sneezing runny nose itchy eyes watery eyes",Allergy
+"skin rash itching sneezing nasal congestion",Allergy
+"itchy throat runny nose mild cough",Allergy
+"watery eyes sneezing sinus pressure",Allergy
+"itchy skin sneezing eye redness",Allergy
+"allergic rash itching watery nose",Allergy
+"pollen exposure sneezing itchy eyes",Allergy
+"dust allergy sneezing blocked nose",Allergy
+"itchy nose watery eyes frequent sneezing",Allergy
+"allergy symptoms rash itching runny nose",Allergy
+"fever dry cough tiredness loss of taste",COVID-19
+"fever cough shortness of breath loss of smell",COVID-19
+"body ache sore throat cough fatigue fever",COVID-19
+"dry cough fever chills headache breathlessness",COVID-19
+"loss of smell dry cough fever",COVID-19
+"fever chest tightness fatigue dry cough",COVID-19
+"persistent cough low oxygen fever",COVID-19
+"sore throat fever anosmia cough",COVID-19
+"short breath fever cough weakness",COVID-19
+"covid symptoms fever taste loss cough",COVID-19
+"frequent urination excessive thirst blurred vision fatigue",Diabetes
+"increased hunger weight loss frequent urination",Diabetes
+"slow healing wounds tiredness dry mouth frequent urination",Diabetes
+"blurred vision numbness hands feet fatigue",Diabetes
+"high blood sugar thirst fatigue",Diabetes
+"polyuria polydipsia tiredness",Diabetes
+"sugar cravings frequent urination blurry vision",Diabetes
+"dry mouth hunger fatigue frequent urine",Diabetes
+"weight loss increased thirst urination",Diabetes
+"fatigue blurry vision high glucose symptoms",Diabetes
+"headache nausea sensitivity to light blurred vision",Migraine
+"throbbing headache vomiting light sensitivity sound sensitivity",Migraine
+"one sided headache nausea visual aura",Migraine
+"severe headache dizziness sensitivity to noise",Migraine
+"migraine pain aura nausea",Migraine
+"pulsating headache photophobia nausea",Migraine
+"unilateral headache visual aura vomiting",Migraine
+"head pain with light sensitivity",Migraine
+"migraine episode nausea dizziness",Migraine
+"throbbing head pain light intolerance",Migraine
+"abdominal pain diarrhea fever nausea vomiting",Food Poisoning
+"stomach cramps loose stools vomiting weakness",Food Poisoning
+"nausea watery diarrhea abdominal cramps dehydration",Food Poisoning
+"vomiting fever abdominal discomfort loss of appetite",Food Poisoning
+"contaminated food vomiting diarrhea cramps",Food Poisoning
+"stomach upset vomiting nausea diarrhea",Food Poisoning
+"food poisoning nausea dehydration abdominal pain",Food Poisoning
+"loose motion vomiting weakness after meal",Food Poisoning
+"severe stomach cramps diarrhea nausea",Food Poisoning
+"acute vomiting abdominal cramps",Food Poisoning
+"burning urination frequent urination pelvic pain cloudy urine",Urinary Tract Infection
+"pain while urinating lower abdominal pain fever",Urinary Tract Infection
+"strong urine odor frequent urge to urinate",Urinary Tract Infection
+"burning urine mild fever back pain",Urinary Tract Infection
+"uti symptoms burning urination urgency",Urinary Tract Infection
+"pelvic discomfort painful urination cloudy urine",Urinary Tract Infection
+"frequent urination burning sensation",Urinary Tract Infection
+"urine infection pain and fever",Urinary Tract Infection
+"dysuria urgency lower belly pain",Urinary Tract Infection
+"urinary tract pain burning pee",Urinary Tract Infection
+"wheezing shortness of breath chest tightness cough",Asthma
+"difficulty breathing wheeze cough at night",Asthma
+"breathlessness chest tightness coughing",Asthma
+"wheezing rapid breathing fatigue",Asthma
+"asthma attack wheeze chest tightness",Asthma
+"night cough breathlessness wheezing",Asthma
+"short breath wheeze after exercise",Asthma
+"airway tightness cough wheezing",Asthma
+"asthmatic breathing difficulty coughing",Asthma
+"wheeze breathless chest pressure",Asthma
+"chest pain shortness of breath sweating nausea",Heart Attack
+"severe chest pressure left arm pain breathlessness",Heart Attack
+"tight chest dizziness cold sweat nausea",Heart Attack
+"chest discomfort jaw pain shortness of breath",Heart Attack
+"heart attack symptoms crushing chest pain",Heart Attack
+"left arm pain chest heaviness sweating",Heart Attack
+"sudden chest pain breathlessness panic sweating",Heart Attack
+"intense chest pressure nausea sweating",Heart Attack
+"cardiac pain chest tightness radiating arm",Heart Attack
+"severe chest pain emergency breathlessness",Heart Attack
+"sore throat cough mild fever fatigue",Common Cold
+"runny nose sneezing cough headache",Common Cold
+"nasal congestion sore throat mild body ache",Common Cold
+"cough sneezing watery eyes low fever",Common Cold
+"cold symptoms sneezing blocked nose",Common Cold
+"common cold runny nose throat irritation",Common Cold
+"mild cough runny nose fatigue",Common Cold
+"stuffy nose sneezing headache",Common Cold
+"cold with throat pain and sneezing",Common Cold
+"mild fever runny nose cough",Common Cold

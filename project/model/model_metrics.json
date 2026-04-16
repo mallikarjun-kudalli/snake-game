@@ -1,0 +1,14 @@
+{
+  "best_model": "random_forest",
+  "models": {
+    "decision_tree": {
+      "accuracy": 0.44,
+      "macro_avg_f1": 0.3578
+    },
+    "random_forest": {
+      "accuracy": 0.64,
+      "macro_avg_f1": 0.6321
+    }
+  },
+  "dataset_path": "C:\\Users\\MALLU\\Documents\\New project\\project\\dataset\\symptoms_disease.csv"
+}

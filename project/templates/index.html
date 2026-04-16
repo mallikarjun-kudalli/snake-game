@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-Based Medical Pre-Diagnosis System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body data-theme="aurora">
+  <main class="page-shell">
+    <section class="hero-panel glass">
+      <div class="hero-top">
+        <div>
+          <p class="eyebrow">Clinical AI Assistant</p>
+          <h1>AI-Based Medical Pre-Diagnosis</h1>
+        </div>
+        <div class="theme-switcher">
+          <label for="theme-select">Theme</label>
+          <select id="theme-select" aria-label="Select theme">
+            <option value="aurora">Aurora</option>
+            <option value="sunrise">Sunrise</option>
+            <option value="midnight">Midnight</option>
+            <option value="ocean">Ocean</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="hero-copy">
+        Enter symptoms in natural language, then get the predicted disease, confidence, severity,
+        top alternatives, and actionable guidance.
+      </p>
+
+      <div class="hero-kpis">
+        <article>
+          <p class="label">Best Model</p>
+          <p class="value">{{ best_model }}</p>
+        </article>
+        <article>
+          <p class="label">Input Mode</p>
+          <p class="value">Text + Voice</p>
+        </article>
+        <article>
+          <p class="label">Output</p>
+          <p class="value">Top-3 diseases</p>
+        </article>
+      </div>
+
+      <div class="hero-hints">
+        <p>Quick tips</p>
+        <ul>
+          <li>Separate symptoms with commas for cleaner parsing.</li>
+          <li>Use sample templates to test faster.</li>
+          <li>Press <strong>Ctrl + Enter</strong> to run prediction.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="workspace glass">
+      <form id="predict-form">
+        <div class="form-head">
+          <h2>Symptom Input</h2>
+          <span id="char-count">0 chars</span>
+        </div>
+
+        <div class="input-toolbar">
+          <label for="sample-case">Sample Case</label>
+          <select id="sample-case">
+            <option value="">Select sample...</option>
+            <option value="fever, dry cough, loss of smell, fatigue">Possible COVID-like symptoms</option>
+            <option value="chest pain, shortness of breath, sweating">Emergency cardiac symptoms</option>
+            <option value="burning urination, frequent urination, pelvic pain">Possible UTI symptoms</option>
+            <option value="throbbing headache, nausea, sensitivity to light">Migraine-like symptoms</option>
+          </select>
+          <button type="button" id="apply-sample" class="btn-ghost">Use Sample</button>
+          <button type="button" id="voice-btn" class="btn-ghost">Voice Input</button>
+        </div>
+
+        <label for="symptoms">Describe Symptoms</label>
+        <textarea
+          id="symptoms"
+          name="symptoms"
+          rows="6"
+          placeholder="Example: fever, dry cough, shortness of breath, weakness"
+          required
+        ></textarea>
+
+        <div class="quick-symptoms">
+          <button type="button" class="chip" data-symptom="fever">fever</button>
+          <button type="button" class="chip" data-symptom="dry cough">dry cough</button>
+          <button type="button" class="chip" data-symptom="shortness of breath">shortness of breath</button>
+          <button type="button" class="chip" data-symptom="chest pain">chest pain</button>
+          <button type="button" class="chip" data-symptom="frequent urination">frequent urination</button>
+          <button type="button" class="chip" data-symptom="headache">headache</button>
+          <button type="button" class="chip" data-symptom="nausea">nausea</button>
+          <button type="button" class="chip" data-symptom="fatigue">fatigue</button>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn-primary">Predict</button>
+          <button type="button" id="clear-btn" class="btn-ghost">Clear</button>
+          <button type="button" id="copy-btn" class="btn-ghost">Copy Result</button>
+          <button type="button" id="download-btn" class="btn-ghost">Download JSON</button>
+        </div>
+      </form>
+
+      <div id="loader" class="loader hidden">
+        <span class="loader-dot"></span>
+        <span>Analyzing symptoms...</span>
+      </div>
+
+      <section id="result" class="result hidden">
+        <div class="result-head">
+          <h3>Prediction Result</h3>
+          <span id="risk-pill" class="risk-pill">Risk: -</span>
+        </div>
+
+        <div class="result-grid">
+          <article>
+            <p class="label">Predicted Disease</p>
+            <p id="disease" class="value"></p>
+          </article>
+          <article>
+            <p class="label">Severity</p>
+            <p><span id="severity" class="badge"></span></p>
+          </article>
+        </div>
+
+        <div class="confidence-wrap">
+          <div class="confidence-head">
+            <span>Confidence Score</span>
+            <strong><span id="confidence"></span>%</strong>
+          </div>
+          <div class="progress-track">
+            <div id="confidence-bar" class="progress-fill"></div>
+          </div>
+        </div>
+
+        <div class="advice-box">
+          <p class="label">Advice</p>
+          <p id="advice"></p>
+        </div>
+
+        <div class="top3-box">
+          <p class="label">Top-3 Predictions</p>
+          <ul id="top3-list"></ul>
+        </div>
+      </section>
+
+      <section id="error-box" class="error hidden"></section>
+
+      <section class="history-box">
+        <div class="history-head">
+          <h3>Recent Checks</h3>
+          <button type="button" id="clear-history" class="btn-ghost small">Clear History</button>
+        </div>
+        <ul id="history-list"></ul>
+      </section>
+
+      <p class="disclaimer">
+        Disclaimer: This is not a substitute for professional medical advice.
+      </p>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
